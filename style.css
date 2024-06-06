@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+header {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: skyblue;
+    font-size: 8vw; /* 字体大小随屏幕宽度调整 */
+    letter-spacing: 2vw;
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+article {
+    background: rgba(0, 0, 0, 0.45);
+    color: red;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+    width: 100%;
+    max-width: 800px; /* 大屏幕时的最大宽度 */
+    margin: 0 auto;
+}
+
+article p {
+    color: blanchedalmond;
+    font-size: 4vw; /* 字体大小随屏幕宽度调整 */
+}
+
+div {
+    font-size: 3vw; /* 字体大小随屏幕宽度调整 */
+    color: aqua;
+}
+
+a {
+    color: rgb(50, 182, 205);
+}
+
+a:hover {
+    color: yellowgreen;
+}
+
+/* 大屏幕时的媒体查询 */
+@media (min-width: 600px) {
+    article p {
+        font-size: 1.6vw;
+    }
+
+    div {
+        font-size: 1.2vw;
+    }
+
+    header {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    article p {
+        font-size: 26px;
+    }
+
+    div {
+        font-size: 20px;
+    }
+
+    header {
+        font-size: 100px;
+        letter-spacing: 20px;
+    }
+}
